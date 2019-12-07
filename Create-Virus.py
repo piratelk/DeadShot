@@ -28,7 +28,7 @@ def banner():
 #    print(""+R+"U "+C+" DD     DD EEEEEEE  AAAAAAA  DD     DD SSSSSSSS HHHHHHH OO   OO     TT     "+R+"U")    
 #    print(""+R+"S "+C+" DD     DD EE       AA   AA  DD     DD       SS HH   HH OO   OO     TT     "+R+"S")    
 #    print(""+R+"! "+C+"DDDDDDDDDD EEEEEEEE AA   AA DDDDDDDDDD SSSSSSSS HH   HH OOOOOOO     TT     "+R+"!")    	print("\t\t"+B+"<<<<<<| "+R+"About Tool "+B+"|>>>>>>\n")
-	print("\t"+G+"Made For "+B+" Education Purpose"+R+" Only"+B+"\t\t")
+	print("\t"+G+"Made For "+B+" Education Purpose"+R+" >3"+B+"\t\t")
 	print("\tAuthor  : D_E_A_D S_H_O_T \t\t\t")
 	print("\tVersion : 1.0 \t\t\t")
 	print("\tTeam    : TECH SESSION "+R+"")
